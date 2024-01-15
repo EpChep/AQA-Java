@@ -12,8 +12,8 @@ public class Main {
         System.out.println("Apple");
     }
     public static void checkSumSign() {
-        int a = 5;
-        int b = -3;
+        int a = 100;
+        int b = -332;
         int sum = a + b;
 
         if (sum >= 0) {
@@ -23,7 +23,7 @@ public class Main {
         }
     }
     public static void printColor() {
-        int value = 75;
+        int value = 71213;
 
         if (value <= 0) {
             System.out.println("Красный");
@@ -34,8 +34,8 @@ public class Main {
         }
     }
     public static void compareNumbers() {
-        int a = 10;
-        int b = 7;
+        int a = -322310;
+        int b = -4234357;
 
         if (a >= b) {
             System.out.println("a >= b");
