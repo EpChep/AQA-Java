@@ -5,6 +5,7 @@ public class Method {
         secondMethod();
         thirdMethod();
         fourthMethod();
+        fifthMethod();
     }
 
     public static void firstMethod() {
@@ -29,9 +30,9 @@ public class Method {
         System.out.println("Введите положительное или отрицательное число: ");
         int numeric = scanner.nextInt();
         if (numeric < 0) {
-            System.out.println("Введенно отрицательное число.");
+            System.out.println("Введено отрицательное число.");
         } else {
-            System.out.println("Введенно положительное число.");
+            System.out.println("Введено положительное число.");
         }
     }
     public static void thirdMethod() {
@@ -44,14 +45,29 @@ public class Method {
     public static boolean minusOrPlus(int num) {
         return num < 0;
         }
-    public static void fourthMethod(){
+    public static void fourthMethod () {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите сообщение: ");
-        String string = scanner.nextLine();
+        System.out.println("Введите сообщение: " );
+        String message = scanner.nextLine();
         System.out.println("Введите число: ");
-        int number = scanner.nextInt();
+        int num = scanner.nextInt();
+        String repeated = message.repeat(num);
+        System.out.println(repeated);
+    }
+    public static void fifthMethod() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Напишите год: ");
+        int year = scanner.nextInt();
+        boolean visokos = yesOrNo(year);
+        System.out.println(visokos);
 
+    }
+    public static boolean yesOrNo(int year) {
+        if (year%400 == 0 && year%100 != 0 || year%4==0){
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
-
