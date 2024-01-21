@@ -16,7 +16,7 @@ public class Arrays {public static void main(String[] args) {
 
     int array4Size = 4;
     int[][] arrayFour = arrayFour(array4Size);
-    printMatrix(arrayFour);
+    printArrayFour(arrayFour);
 
 
 }
@@ -60,7 +60,7 @@ public class Arrays {public static void main(String[] args) {
         System.out.println();
     }
 
-    private static void printMatrix(int[][] matrix) {
+    private static void printArrayFour(int[][] matrix) {
         for (int[] row : matrix) {
             for (int value : row) {
                 System.out.print(value + " ");
