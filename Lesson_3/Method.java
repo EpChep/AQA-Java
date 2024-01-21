@@ -6,6 +6,7 @@ public class Method {
         thirdMethod();
         fourthMethod();
         fifthMethod();
+        sixthMethod();
     }
 
     public static void firstMethod() {
@@ -42,9 +43,7 @@ public class Method {
         boolean res = minusOrPlus(num);
         System.out.println(res);
     }
-    public static boolean minusOrPlus(int num) {
-        return num < 0;
-        }
+    public static boolean minusOrPlus(int num) {return num < 0;}
     public static void fourthMethod () {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сообщение: " );
@@ -69,5 +68,18 @@ public class Method {
             return false;
         }
     }
-
+    public static void sixthMethod(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите длину массива: ");
+        int len = scanner.nextInt();
+        System.out.println("Введите значения ячеек: ");
+        int initialValue = scanner.nextInt();
+        int[] array = new int[len];
+        for (int i = 0; i < len; i++) {
+            array[i] = initialValue;
+        }
+        for (int value : array) {
+            System.out.print(value + " ");
+        }
+    }
 }
