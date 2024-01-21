@@ -1,29 +1,30 @@
-public class Arrays {public static void main(String[] args) {
-    int[] array1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-    arrayOne(array1);
-    printArray(array1);
+public class Arrays {
+    public static void main(String[] args) {
+        int[] array1 = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+        arrayOne(array1);
+        printArray(array1);
 
 
-    int[] array2 = new int[100];
-    arrayTwo(array2);
-    printArray(array2);
+        int[] array2 = new int[100];
+        arrayTwo(array2);
+        printArray(array2);
 
 
-    int[] array3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
-    arrayThree(array3);
-    printArray(array3);
+        int[] array3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        arrayThree(array3);
+        printArray(array3);
 
 
-    int array4Size = 4;
-    int[][] arrayFour = arrayFour(array4Size);
-    printArrayFour(arrayFour);
+        int array4Size = 7;
+        int[][] arrayFour = arrayFour(array4Size);
+        printArrayFour(arrayFour);
 
 
-}
+    }
 
     private static void arrayOne(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == 0){
+            if (array[i] == 0) {
                 array[i] = 1;
             } else {
                 array[i] = 0;
@@ -49,6 +50,9 @@ public class Arrays {public static void main(String[] args) {
         int[][] matrix = new int[size][size];
         for (int i = 0; i < size; i++) {
             matrix[i][i] = 1;
+        }
+        for (int i = 0; i < size; i++) {
+            matrix[i][size-1-i]=1;
         }
         return matrix;
     }
