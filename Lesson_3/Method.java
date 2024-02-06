@@ -36,14 +36,16 @@ public class Method {
             System.out.println("Введено положительное число.");
         }
     }
-    public static void thirdMethod() {
+    public static boolean thirdMethod() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите целое число: ");
         int num = scanner.nextInt();
-        boolean res = minusOrPlus(num);
-        System.out.println(res);
+        if (num < 0) {
+            return true;
+        }
+        return false;
     }
-    public static boolean minusOrPlus(int num) {return num < 0;}
+
     public static void fourthMethod () {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите сообщение: " );
