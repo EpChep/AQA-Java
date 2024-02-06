@@ -15,7 +15,7 @@ public class Employee {
         this.age = age;
     }
 
-    public void employeeInfo() {
+    public void printEmployeeInfo() {
         System.out.println("ФИО: " + name);
         System.out.println("Должность: " + position);
         System.out.println("email: " + mail);
@@ -32,7 +32,7 @@ public class Employee {
         array[3] = new Employee("Дуров Иван Андреевич", "Тестировщик", "ada@mail.ru", "88002221212", 240000, 25);
         array[4] = new Employee("Томас Андерсон", "Системный администратор", "cdc@mail.ru", "88003222444", 40000, 24);
         for (Employee employee : array) {
-            employee.employeeInfo();
+            employee.printEmployeeInfo();
         }
     }
 }
