@@ -59,11 +59,11 @@ public class Method {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Напишите год: ");
         int year = scanner.nextInt();
-        boolean visokos = yesOrNo(year);
+        boolean visokos = isLeapYear(year);
         System.out.println(visokos);
 
     }
-    public static boolean yesOrNo(int year) {
+    public static boolean isLeapYear(int year) {
         if (year%400 == 0 || year%4==0 && year%100 != 0){
             return true;
         } else {
